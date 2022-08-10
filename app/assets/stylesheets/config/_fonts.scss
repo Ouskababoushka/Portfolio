@@ -1,5 +1,5 @@
 // Import Google fonts
-// @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
 
 // Define fonts for body and headers
 // $body-font: "Neue Montreal", "Normal";
@@ -14,11 +14,3 @@
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
-
-@font-face {
-  font-family: "Neue Montreal";
-  src: url(fonts/PPNeueMontreal-Medium.otf);
-  font-style: normal;
-  font-weight: 100;
-}
-$my-font: "Neue Montreal";
