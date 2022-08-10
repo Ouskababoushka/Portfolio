@@ -1,0 +1,18 @@
+body {
+  background-color: #E1DFDD;
+  height: 100vh;
+  padding: 0px 45px;
+
+}
+
+h2 {
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(fonts/PPNeueMontreal-Medium.otf);
+  font-style: normal;
+  font-weight: 100;
+}
+$my-font: "Neue Montreal";
