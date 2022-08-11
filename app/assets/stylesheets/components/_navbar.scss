@@ -1,9 +1,43 @@
 .navbar {
   background-color: #E1DFDD;
-  color: black;
-  padding: 42px 0px 0px;
+  color: black!important;
+  padding: 30px 0px 0px;
+  font-family: 'pp_neue_montrealbook'!important;
+  font-weight: bold!important;
+  font-style: normal!important;
+  font-size: 1.3vw;
+  margin-bottom: 5%;
+  text-decoration: none!important;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+// .navbar-lewagon .navbar-collapse {
+//   flex-grow: 0;
+// }
+// .w3rcontainer{
+//   border: 1px solid
+// #cccfdb;
+//   border-radius: 2px;
+// }
+.hover-underline-animation {
+ display: inline-block;
+ position: relative;
+ color:black;
+}
+
+.hover-underline-animation:after {
+ content: '';
+ position: absolute;
+ width: 100%;
+ transform: scaleX(0);
+ height: 1px;
+ bottom: 0;
+ left: 0;
+ background-color:black;
+ transform-origin: bottom right;
+ transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+ transform: scaleX(1);
+ transform-origin: bottom left;
 }

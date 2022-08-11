@@ -2,10 +2,18 @@ body {
   background-color: #E1DFDD;
   color: black;
   height: 100vh;
-  padding: 0px 45px;
-
+  padding: 0px 4vw;
 }
 
-h2 {
+.big-text {
+  line-height: .875;
+  text-transform: uppercase;
+  font-family: 'pp_neue_montrealbook'!important;
+  font-weight: bold!important;
+  font-style: normal!important;
+  font-size: 8vw;
+}
 
+a {
+  text-decoration: none;
 }
