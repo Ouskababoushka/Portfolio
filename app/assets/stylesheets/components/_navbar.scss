@@ -1,12 +1,11 @@
 .navbar {
-  background-color: #E1DFDD;
+  padding: 2vh 2vw 0 2vw!important;
+  background-color: transparent;
   color: black!important;
-  padding: 30px 0px 0px;
   font-family: 'pp_neue_montrealbook'!important;
   font-weight: bold!important;
   font-style: normal!important;
   font-size: 1.3vw;
-  margin-bottom: 5%;
   text-decoration: none!important;
 }
 
@@ -40,4 +39,12 @@
 .hover-underline-animation:hover:after {
  transform: scaleX(1);
  transform-origin: bottom left;
+}
+
+a {
+  text-decoration: none!important;
+}
+
+.oim {
+  color: black!important;
 }

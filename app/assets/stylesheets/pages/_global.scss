@@ -1,8 +1,8 @@
 body {
   background-color: #E1DFDD;
-  color: black;
-  height: 100vh;
-  padding: 0px 4vw;
+  color: black!important;
+  // height: 100vh;
+  padding: 0px 2vw;
 }
 
 .big-text {
@@ -12,6 +12,14 @@ body {
   font-weight: bold!important;
   font-style: normal!important;
   font-size: 8vw;
+}
+
+p {
+  text-transform: uppercase;
+  font-family: 'pp_neue_montrealbook'!important;
+  font-weight: bold!important;
+  font-style: normal!important;
+  font-size: 1.3vw;
 }
 
 a {
