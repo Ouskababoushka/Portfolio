@@ -3,11 +3,6 @@
   margin-top: auto;
 }
 
-.Projects {
-  background-color: $green;
-  color: white;
-}
-
 .Contact {
   background-color: $green;
   color: white;
@@ -37,21 +32,32 @@
   font-size: 3rem;
 }
 
-.tile {
+.Projects {
+  background-color: $green;
   color: #E1DFDD;
-  p {
-    color: black;
-  }
-}
 
-article {
-  border-radius: 0%!important;
-  color: black!important;
-  .white-p {
-    color: white!important;
+  .tile {
+    // color: #E1DFDD;
+    p {
+      color: black;
+    }
+  }
+
+  article {
+    border-radius: 0%!important;
+    color: black!important;
+    background-color: #E1DFDD!important;
+
+    .white-p {
+      color: white!important;
+    }
   }
 }
 
 .block {
   display: block;
+}
+
+.Email {
+  cursor: url-path("sans-titre-1.png"), auto;
 }

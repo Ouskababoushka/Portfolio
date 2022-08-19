@@ -18,6 +18,8 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 
+gem 'jquery-rails'
+
 gem "bulma-rails", "~> 0.9.3"
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'

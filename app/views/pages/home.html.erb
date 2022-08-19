@@ -6,7 +6,7 @@
         <%= image_tag("profile-pic-blck.jpg") %>
       </div>
       <p class="resume column">I SUPPORT DESIGNERS <br> AND AGENCIES WITH <br> CREATIVE DEVELOPMENT</p>
-      <h2 class="HomeHeroName big-text column is-half is-align-content-baseline">VALENTIN<br>CHAUVEAU</h2>
+      <h2 class="HomeHeroName big-text column is-half is-align-content-baseline has-text-right">VALENTIN<br>CHAUVEAU</h2>
     </div>
     <div class="columns">
       <span class="arrow big-text column is-one-fifth ">↓</span>
@@ -79,10 +79,35 @@
     </div>
 </section>
 
-<%= render partial: "3d_round_viewer" %>
+<%# <%= render partial: "3d_round_viewer" %>
 
 <section class="Contact section columns is-responsive mx-6", id="contact">
-    <span class="Email is-responsive has-text-centered">BONJOUR@VALENTINCHAUVEAU.COM</span>
+    <button data-text-swap="Copied to clipboard" onclick="copyText()" class="Email is-responsive has-text-centered my-6">BONJOUR@VALENTINCHAUVEAU.COM</button>
+    <script>
+
+      function copyText() {
+        /* Copy text into clipboard */
+        navigator.clipboard.writeText
+        ("bonjour@valentinchauveau.com");
+      }
+
+      var email = document.querySelectorAll("button")[0];
+      email.addEventListener('click', function() {
+      if (email.getAttribute("data-text-swap") == email.innerHTML) {
+        email.innerHTML = email.getAttribute("data-text-original");
+      } else {
+        email.setAttribute("data-text-original", email.innerHTML);
+        email.innerHTML = email.getAttribute("data-text-swap");
+      }
+        setTimeout(function(){
+          email.setAttribute("data-text-swap", email.innerHTML);
+          email.innerHTML = email.getAttribute("data-text-original");;
+        }, 1500);
+
+      }, false);
+
+
+    </script>
 </section>
 
 <footer class="footer is-medium px-6">
