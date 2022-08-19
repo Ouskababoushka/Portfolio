@@ -5,6 +5,18 @@ body {
   padding: 0px 2vw;
 }
 
+footer {
+  background-color: #E1DFDD!important;
+  color: black;
+  font-family: 'pp_neue_montrealbook'!important;
+  font-weight: bold!important;
+  font-style: normal!important;
+  font-size: 1.2vw;
+  text-decoration: none!important;
+  padding-top: 6rem!important;
+  padding-bottom: 5rem!important;
+}
+
 .big-text {
   line-height: .875;
   text-transform: uppercase;
@@ -14,8 +26,17 @@ body {
   font-size: 8vw;
 }
 
-p {
+.medium-text {
+  line-height: .875;
   text-transform: uppercase;
+  font-family: 'pp_neue_montrealbook'!important;
+  font-weight: bold!important;
+  font-style: normal!important;
+  font-size: 2vw;
+}
+
+p {
+  // text-transform: uppercase;
   font-family: 'pp_neue_montrealbook'!important;
   font-weight: bold!important;
   font-style: normal!important;

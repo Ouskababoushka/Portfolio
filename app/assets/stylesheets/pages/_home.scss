@@ -1,8 +1,57 @@
 // Specific CSS for your home-page
-.arrow{
-
-}
-
 .HomeHeroName {
   margin-top: auto;
+}
+
+.Projects {
+  background-color: $green;
+  color: white;
+}
+
+.Contact {
+  background-color: $green;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // width: 100vw;
+  // height: 100vh;
+  touch-action: pan-left, pan-right, pan-up, pan-down;
+
+  canvas {
+    width: 5vw !important;
+    height: 5vw !important;
+    // border-radius: 50%;
+    clip-path: circle(calc(50% - 1px));
+    // image-rendering: pixelated;
+  }
+}
+
+.Email {
+  line-height: .875;
+  text-transform: uppercase;
+  font-family: 'pp_neue_montrealbook'!important;
+  font-weight: bold!important;
+  font-style: normal!important;
+  font-size: 3rem;
+}
+
+.tile {
+  color: #E1DFDD;
+  p {
+    color: black;
+  }
+}
+
+article {
+  border-radius: 0%!important;
+  color: black!important;
+  .white-p {
+    color: white!important;
+  }
+}
+
+.block {
+  display: block;
 }
