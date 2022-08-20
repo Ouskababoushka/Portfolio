@@ -1,36 +1,46 @@
 // Specific CSS for your home-page
-.HomeHeroName {
-  margin-top: auto;
-}
-
-.Contact {
-  background-color: $green;
-  color: white;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  // width: 100vw;
+body {
+  background-color: #E1DFDD;
+  color: black!important;
   // height: 100vh;
-  touch-action: pan-left, pan-right, pan-up, pan-down;
-
-  canvas {
-    width: 5vw !important;
-    height: 5vw !important;
-    // border-radius: 50%;
-    clip-path: circle(calc(50% - 1px));
-    // image-rendering: pixelated;
-  }
+  padding: 0px 2vw;
 }
 
-.Email {
+a { color: black!important; }
+
+li {
+  color: black!important;
+  text-decoration: none!important;
+}
+
+p {
+  // text-transform: uppercase;
+  font-family: 'pp_neue_montrealbook'!important;
+  font-weight: bold!important;
+  font-style: normal!important;
+  font-size: 1.3vw;
+}
+
+.big-text {
   line-height: .875;
   text-transform: uppercase;
   font-family: 'pp_neue_montrealbook'!important;
   font-weight: bold!important;
   font-style: normal!important;
-  font-size: 3rem;
-  cursor:image-url("click-to-copy-4") 50 50, auto;
+  font-size: 8vw;
+}
+
+.medium-text {
+  line-height: .875;
+  text-transform: uppercase;
+  font-family: 'pp_neue_montrealbook'!important;
+  font-weight: bold!important;
+  font-style: normal!important;
+  font-size: 2vw;
+}
+
+.HomeHeroName {
+  margin-top: auto;
 }
 
 .Projects {
@@ -55,9 +65,64 @@
   }
 }
 
+.skills {
+  color: black!important;
+  font-family: 'pp_neue_montrealmedium'!important;
+  font-weight: bold!important;
+  font-style: normal!important;
+  font-size: 1.2vw;
+  text-decoration: none!important;
+  text-transform: uppercase;
+}
+
 .block {
   display: block;
 }
 
-a { color: inherit; }
-li { color: inherit; }
+.Contact {
+  background-color: $green;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // width: 100vw;
+  // height: 100vh;
+  touch-action: pan-left, pan-right, pan-up, pan-down;
+
+  canvas {
+    width: 5vw !important;
+    height: 5vw !important;
+    // border-radius: 50%;
+    clip-path: circle(calc(50% - 1px));
+    // image-rendering: pixelated;
+  }
+}
+
+.Email {
+  color: white;
+  padding: 0;
+  border: none;
+  background: none;
+  line-height: .875;
+  text-transform: uppercase;
+  font-family: 'pp_neue_montrealbook'!important;
+  font-weight: bold!important;
+  font-style: normal!important;
+  font-size: 6rem;
+  cursor:image-url("click-to-copy-4") 50 50, auto;
+
+}
+
+footer {
+  background-color: #E1DFDD!important;
+  color: black;
+  font-family: 'pp_neue_montrealbook'!important;
+  font-weight: bold!important;
+  font-style: normal!important;
+  font-size: 1.2vw;
+  text-decoration: none!important;
+  padding-top: 6rem!important;
+  padding-bottom: 5rem!important;
+  a { color: inherit; }
+}
