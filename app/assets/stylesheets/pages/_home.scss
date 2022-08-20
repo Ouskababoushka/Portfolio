@@ -30,12 +30,12 @@
   font-weight: bold!important;
   font-style: normal!important;
   font-size: 3rem;
-  cursor: alias;
+  cursor:image-url("click-to-copy-4") 50 50, auto;
 }
 
 .Projects {
   background-color: $green;
-  color: #E1DFDD;
+  color: white;
 
   .tile {
     // color: #E1DFDD;

@@ -1,7 +1,7 @@
 <nav class="navbar is-fixed-top is-transparent is-responsive mx-5" role="navigation" aria-label="main navigation">
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start ml-3">
-      <a href="<%= root_path %>" class="navbar-item oim">
+      <a href="<%= '#top' %>" class="navbar-item oim">
         Valentin Chauveau
       </a>
     </div>
@@ -21,3 +21,15 @@
     </div>
   </div>
 </nav>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });
+</script>

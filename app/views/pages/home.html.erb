@@ -1,4 +1,4 @@
-<section class="hero is-responsive pt-6">
+<section class="hero is-responsive pt-6" id="top">
   <div class="hero-body">
     <h2 class="HomeHeroTitle big-text columns pl-2 mb-5 el">FULLSTACK<br>DEVELOPER</h2>
     <div class="columns my-5">
@@ -67,7 +67,7 @@
 </section>
 
 <section class="About skills section is-responsive mt-6 mb-6", id="about">
-    <h2 class="medium-text columns pl-3 mb-5 el">ABOUT ME</h2>
+    <h2 class="medium-text columns pl-3 mb-5">ABOUT ME</h2>
     <p class="el">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
@@ -81,8 +81,8 @@
 
 <%# <%= render partial: "3d_round_viewer" %>
 
-<section class="Contact section columns is-responsive mx-6 el", id="contact">
-    <button data-text-swap="Copied to clipboard" onclick="copyText()" class="Email is-responsive has-text-centered my-6">BONJOUR@VALENTINCHAUVEAU.COM</button>
+<section class="Contact section columns is-responsive mx-6", id="contact">
+    <button data-text-swap="Copied to clipboard" onclick="copyText()" class="Email is-responsive has-text-centered my-6 el">BONJOUR@VALENTINCHAUVEAU.COM</button>
     <script>
 
       function copyText() {
@@ -119,25 +119,14 @@
 </footer>
 
 <script>
-  // ScrollReveal().reveal('.HomeHeroTitle', { delay: 100 });
-  // ScrollReveal().reveal('.resume', { delay: 200 });
-  // ScrollReveal().reveal('.HomeHeroName', { delay: 300 });
-  // ScrollReveal().reveal('.image', { delay: 200 });
-  // ScrollReveal().reveal('.hero', { delay: 100 });
-  // ScrollReveal().reveal('.hero', { delay: 100 });
-  // ScrollReveal().reveal('.hero', { delay: 100 });
-  // ScrollReveal().reveal('.hero', { delay: 100 });
-  // ScrollReveal().reveal('.hero', { delay: 100 });
-  // ScrollReveal().reveal('.hero', { delay: 100 });
-  // ScrollReveal().reveal('.hero', { delay: 100 });
-ScrollReveal().reveal('.el', {
-    delay: 500,
-    useDelay: 'onload',
-    reset: true,
-})
+  ScrollReveal().reveal('.el', {
+      delay: 500,
+      useDelay: 'onload',
+      reset: true,
+  })
 
-ScrollReveal().reveal('.el', {
-    delay: 0,
-    interval: 80
-})
+  ScrollReveal().reveal('.el', {
+      delay: 0,
+      interval: 80
+  })
 </script>
