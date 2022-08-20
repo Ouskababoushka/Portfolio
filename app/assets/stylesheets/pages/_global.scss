@@ -15,6 +15,17 @@ footer {
   text-decoration: none!important;
   padding-top: 6rem!important;
   padding-bottom: 5rem!important;
+  a { color: inherit; }
+}
+
+.skills {
+  color: black!important;
+  font-family: 'pp_neue_montrealmedium'!important;
+  font-weight: bold!important;
+  font-style: normal!important;
+  font-size: 1.2vw;
+  text-decoration: none!important;
+  text-transform: uppercase;
 }
 
 .big-text {
@@ -43,6 +54,5 @@ p {
   font-size: 1.3vw;
 }
 
-a {
-  a { color: inherit; }
-}
+a { color: inherit; }
+li { color: inherit; }
