@@ -18,7 +18,7 @@ p {
   font-family: 'pp_neue_montrealbook'!important;
   font-weight: bold!important;
   font-style: normal!important;
-  font-size: 1.3vw;
+  font-size: 1.3rem;
 }
 
 .big-text {
@@ -46,13 +46,6 @@ p {
 .Projects {
   background-color: $green;
   color: white;
-
-  .tile {
-    // color: #E1DFDD;
-    p {
-      color: black;
-    }
-  }
 
   article {
     border-radius: 0%!important;
@@ -120,7 +113,7 @@ footer {
   font-family: 'pp_neue_montrealbook'!important;
   font-weight: bold!important;
   font-style: normal!important;
-  font-size: 1.2vw;
+  font-size: 1.3rem;
   text-decoration: none!important;
   padding-top: 6rem!important;
   padding-bottom: 5rem!important;
