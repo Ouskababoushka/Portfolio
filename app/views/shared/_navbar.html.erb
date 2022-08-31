@@ -30,7 +30,7 @@
   window.addEventListener('scroll', () => {
     navbar.classList.add('hidden');
     let y = 1 + (window.scrollY || window.pageYOffset) / 150
-    y = y < 1 ? 1 : y // ensure y is always >= 1 (due to Safari's elastic scroll)
+    y = y < 1 ? 1 : y 
     const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
     // navbar.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
 
