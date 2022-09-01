@@ -7,10 +7,34 @@
   // perspective: 1000px;
 }
 
+.songsalad-image{
+  height: 100%;
+  position:relative;
+  background:   url(image_path('songsalad-screen.png'))no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.lbc-image{
+  height: 100%;
+  position:relative;
+  background:   url(image_path('lbc-calicot-design.png'))no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.rockyaloha-image{
+  height: 100%;
+  position:relative;
+  background:   url(image_path('rocky-aloha-screen.png'))no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .flip-card-inner {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 330px;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
@@ -23,7 +47,7 @@
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 330px;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }

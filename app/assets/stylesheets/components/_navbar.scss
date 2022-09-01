@@ -1,43 +1,47 @@
-.navbar {
-  padding: 2vh 2vw 0 2vw!important;
-  background-color: rgb(225, 223, 221);
-  color: rgb(0, 0, 0);
-  font-family: 'pp_neue_montrealbook'!important;
-  font-weight: bold!important;
-  font-style: normal!important;
-  font-size: 1.4rem;
-  text-decoration: none!important;
+@media (max-width: 768px) {
+  .hidden {
+    display: none;
+  }
 }
 
-.hidden {
-  // display: none;
+@media (min-width: 768px) {
+  .navbar {
+    padding: 2vh 2vw 0 2vw!important;
+    background-color: rgb(225, 223, 221);
+    color: rgb(0, 0, 0);
+    font-family: 'pp_neue_montrealbook'!important;
+    font-weight: bold!important;
+    font-style: normal!important;
+    font-size: 1.4rem;
+    text-decoration: none!important;
+  }
+
+  .hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color:black;
+  }
+
+  .hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color:black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  }
+
+  .hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+
+  }
+
+  // a {
+  //   text-decoration: none!important;
+  // }
 }
-
-.hover-underline-animation {
- display: inline-block;
- position: relative;
- color:black;
-}
-
-.hover-underline-animation:after {
- content: '';
- position: absolute;
- width: 100%;
- transform: scaleX(0);
- height: 1px;
- bottom: 0;
- left: 0;
- background-color:black;
- transform-origin: bottom right;
- transition: transform 0.25s ease-out;
-}
-
-.hover-underline-animation:hover:after {
- transform: scaleX(1);
- transform-origin: bottom left;
-
-}
-
-// a {
-//   text-decoration: none!important;
-// }
