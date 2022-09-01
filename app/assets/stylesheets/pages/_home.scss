@@ -7,15 +7,12 @@ body {
   // padding: 0px 2vw;
 }
 
-// a { color: black!important; }
-
 li {
   color: black!important;
   text-decoration: none!important;
 }
 
 p {
-  // text-transform: uppercase;
   font-family: 'pp_neue_montrealbook'!important;
   font-weight: bold!important;
   font-style: normal!important;
@@ -80,8 +77,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  // width: 100vw;
-  // height: 100vh;
   touch-action: pan-left, pan-right, pan-up, pan-down;
 
   canvas {
@@ -105,7 +100,6 @@ p {
   font-style: normal!important;
   font-size: 6rem;
   cursor:image-url("click-to-copy-4") 50 50, auto;
-
 }
 
 footer {
@@ -119,4 +113,43 @@ footer {
   padding-top: 6rem!important;
   padding-bottom: 5rem!important;
   a { color: inherit; }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 0!important;
+    padding-top: 0!important;
+  }
+
+  .Projects {
+    background-color: $green;
+    margin: 0px 2%;;
+    color: white;
+
+    article {
+      border-radius: 0%!important;
+      color: black!important;
+      background-color: #E1DFDD!important;
+
+      .white-p {
+        color: white!important;
+      }
+    }
+  }
+
+  .Email {
+    color: white;
+    padding: 0;
+    border: none;
+    background: none;
+    line-height: .875;
+    text-transform: uppercase;
+    font-family: 'pp_neue_montrealbook'!important;
+    font-weight: bold!important;
+    font-style: normal!important;
+    font-size: 100%;
+    cursor:image-url("click-to-copy-4") 50 50, auto;
+  }
+
+
 }

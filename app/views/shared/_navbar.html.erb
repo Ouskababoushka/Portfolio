@@ -1,7 +1,7 @@
 <nav class="navbar is-fixed-top  hidden is-responsive" role="navigation" aria-label="main navigation">
-  <div id="navbarBasicExample" class="navbar-menu">
+  <div id="navbarBasicExample" class="navbar-menu ">
     <div class="navbar-start ml-3">
-      <a href="<%= '#top' %>" class="navbar-item oim">
+      <a href="<%= '#top' %>" class="navbar-item">
         Valentin Chauveau
       </a>
     </div>
@@ -30,7 +30,7 @@
   window.addEventListener('scroll', () => {
     navbar.classList.add('hidden');
     let y = 1 + (window.scrollY || window.pageYOffset) / 150
-    y = y < 1 ? 1 : y 
+    y = y < 1 ? 1 : y
     const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
     // navbar.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
 
@@ -63,4 +63,5 @@
           });
       });
   });
+
 </script>

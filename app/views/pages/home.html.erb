@@ -1,14 +1,14 @@
 <section class="hero is-responsive pt-6 mb-6" id="top">
   <div class="hero-body">
-    <h2 class="HomeHeroTitle big-text columns pl-2 mb-5 el">FULLSTACK<br>DEVELOPER</h2>
+    <h2 class="HomeHeroTitle big-text columns pl-2 mb-5 el is-size-2-mobile">FULLSTACK<br>DEVELOPER</h2>
     <div class="columns my-5">
       <div class="column image el">
         <%= image_tag("profile-pic-blck.jpg") %>
       </div>
-      <p class="resume column el">I CREATE LOGOS AND WEBSITE <br> LOREM IPSUM LOREM IPSUM <br> LOREM IPSUM DOLOR KIKI. </p>
-      <h2 class="HomeHeroName big-text column is-half is-align-content-baseline has-text-right el">VALENTIN<br>CHAUVEAU</h2>
+      <p class="resume column el is-size-6-mobile">I CREATE LOGOS AND WEBSITE <br> LOREM IPSUM LOREM IPSUM <br> LOREM IPSUM DOLOR KIKI. </p>
+      <h2 class="HomeHeroName big-text column is-half is-align-content-baseline has-text-right el is-size-2-mobile">VALENTIN<br>CHAUVEAU</h2>
     </div>
-    <div class="columns">
+    <div class="columns is-mobile">
       <span class="arrow big-text column is-one-fifth el">↓</span>
       <div class="column"></div>
       <span class="arrow big-text column is-one-fifth has-text-right el">↓</span>
@@ -17,7 +17,7 @@
 </section>
 
 <section class="Projects section mx-6 my-6 is-medium", id="work">
-  <h2 class="medium-text mb-5 is-widescreen el">PROJECTS</h2>
+  <h2 class="medium-text mb-5 el is-size-3-mobile">PROJECTS</h2>
 
   <div class="songsalad lbc columns mt-6">
     <div class="flip-card column mb-6 el">
@@ -62,56 +62,22 @@
 </section>
 
 <section class="About section mx-5 my-6 is-medium", id="about">
-    <h2 class="medium-text columns pl-3 mb-6 el">ABOUT</h2>
+    <h2 class="medium-text columns pl-3 mb-6 el is-size-3-mobile">ABOUT</h2>
     <p class="el">
       I'M A 29YO FRENCH DEVELOPER <br>GRADUATED FROM LE WAGON NANTES. <br>
       I LOVE MAKING AND LISTENING TO MUSIC. <br>
-      TAKE A LISTEN HERE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→→→
+      TAKE A LISTEN HERE
     </p>
     <br>
     <p class="el">
-      I'M CURRENTLY AVAILABLE TO WORK.
+      WANNA WORK TOGETHER ?
     </p>
 </section>
 
-<%# <section class="skills section el my-6">
-  <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-    <ul>
-      <li>
-        <a href="#">
-          <span class="icon is-small">
-            <i class="fas fa-home" aria-hidden="true"></i>
-          </span>
-          <span>Technical</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span class="icon is-small">
-            <i class="fas fa-book" aria-hidden="true"></i>
-          </span>
-          <span>Languages</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span class="icon is-small">
-            <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
-          </span>
-          <span>Tools</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span class="icon is-small">
-            <i class="fas fa-thumbs-up" aria-hidden="true"></i>
-          </span>
-          <span>Project Management</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-</section> %>
+<section class="section columns typewriter skills">
+  <h1 class="column el">bulma</h1>
+
+</section>
 
 <%# <%= render partial: "3d_round_viewer" %>
 
@@ -127,8 +93,8 @@
 
       var email = document.querySelectorAll("button")[0];
       email.addEventListener('click', function() {
-      if (email.getAttribute("data-text-swap") == email.innerHTML) {
-        email.innerHTML = email.getAttribute("data-text-original");
+        if (email.getAttribute("data-text-swap") == email.innerHTML) {
+          email.innerHTML = email.getAttribute("data-text-original");
       } else {
         email.setAttribute("data-text-original", email.innerHTML);
         email.innerHTML = email.getAttribute("data-text-swap");
@@ -145,22 +111,22 @@
 </section>
 
 <footer class="footer is-medium px-6 el">
-  <div class="columns ">
-    <a href="https://github.com/Ouskababoushka" class="column " target="_blank">Github</a>
-    <div class="column has-text-centered">Made with 🖤 by<br>Valentin Chauveau 2022</div>
-    <a href="https://www.linkedin.com/in/valentinchauveau/" class="column has-text-right" target="_blank">Linkedin</a>
+  <div class="columns">
+    <a href="https://github.com/Ouskababoushka" class="column has-text-left-mobile " target="_blank">Github</a>
+    <div class="column has-text-centered has-text-left-mobile">Made with 🖤 by<br>Valentin Chauveau 2022</div>
+    <a href="https://www.linkedin.com/in/valentinchauveau/" class="column has-text-right has-text-left-mobile" target="_blank">Linkedin</a>
   </div>
 </footer>
 
 <script class="hidden">
   ScrollReveal().reveal('.el', {
-      delay: 800,
+    delay: 800,
       useDelay: 'onload',
       reset: true,
   })
 
   ScrollReveal().reveal('.el', {
-      delay: 0,
+    delay: 0,
       interval: 120
   })
 </script>
