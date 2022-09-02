@@ -9,3 +9,6 @@ application.register("navbar", NavbarController)
 
 import ClipboardController from "./clipboard_controller"
 application.register("clipboard", ClipboardController)
+
+import TypewriterController from "./typewriter_controller"
+application.register("typewriter", TypewriterController)

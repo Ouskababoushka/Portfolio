@@ -5,7 +5,13 @@
       <div class="column image el">
         <%= image_tag("profile-pic-blck.jpg") %>
       </div>
-      <p class="resume column el is-size-6-mobile">I CREATE LOGOS AND WEBSITE <br> LOREM IPSUM LOREM IPSUM <br> LOREM IPSUM DOLOR KIKI. </p>
+      <div class="resume column el typewriting is-size-6-mobile">
+        <h1>
+          <a class="typewrite" data-period="2000" data-type='[ "HI, IM VAL.", "I DESIGN & DEVELOP LOGOS AND WEBSITES. <br> SCROLL DOWN TO SEE SOME OF MY WORK."]'>
+            <span class="wrap"></span>
+          </a>
+        </h1>
+      </div>
       <h2 class="HomeHeroName big-text column is-half is-align-content-baseline has-text-right el is-size-2-mobile">VALENTIN<br>CHAUVEAU</h2>
     </div>
     <div class="columns is-mobile">
@@ -66,19 +72,26 @@
     <h2 class="medium-text mb-6 el is-size-3-mobile">ABOUT</h2>
       <p class="el">
         I'M A 29YO FRENCH DEVELOPER <br>GRADUATED FROM LE WAGON NANTES. <br>
-        I LOVE MAKING AND LISTENING TO MUSIC. <br>
-        TAKE A LISTEN HERE
+        I AM ALSO A PASSIONATE MUSICIAN.
       </p>
       <br>
-      <p class="el">
-        WANT TO WORK TOGETHER ?
-      </p>
+      <p class="el">*CLICK THE VINYL TO TAKE A LISTEN*</p>
+      <br>
     </div>
-    <div class="column"></div>
+    <div class="column has-text-right has-text-center-mobile">
+        <%= image_tag ("vinyl.png"), class:"rotate", width: 200, height: 200%>
+    </div>
 </section>
 
-<section class="skills section columns mx-5 my-6">
-  <h1 class="column el"></h1>
+<section class="typewriting section columns mx-5 mt-6">
+  <div class="column pl-3 has-text-centered">
+  <%# <h2 class="medium-text mb-6 el is-size-3-mobile">CONTACT</h2> %>
+    <h1>
+      <a class="typewrite" data-period="2000" data-type='[ "WANT TO WORK TOGETHER ?", "SEND ME A MESSAGE" ]'>
+        <span class="wrap"></span>
+      </a>
+    </h1>
+  </div>
 </section>
 
 <%# <%= render partial: "3d_round_viewer" %>
@@ -94,54 +107,6 @@
     <a href="https://www.linkedin.com/in/valentinchauveau/" class="column has-text-right has-text-left-mobile" target="_blank">Linkedin</a>
   </div>
 </footer>
-
-<script>
-document.addEventListener('DOMContentLoaded',function(event){
-  // array with texts to type in typewriter
-  var dataText = ["Skills:", "Ruby on Rails", "Bulma", "Wordpress", "Tailwind", "Bootstrap", "HTML5 & SCSS", "Javascript",
-  "PostgreSQL", "Figma", "Stimulus", "React"];
-
-  // type one text in the typwriter
-  // keeps calling itself until the text is finished
-
-  function typeWriter(text, i, fnCallback) {
-    // chekc if text isn't finished yet
-    if (i < (text.length)) {
-      // add next character to h1
-     document.querySelector("h1").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
-
-      // wait for a while and call this function again for next character
-      setTimeout(function() {
-        typeWriter(text, i + 1, fnCallback)
-      }, 120);
-    }
-    // text finished, call callback if there is a callback function
-    else if (typeof fnCallback == 'function') {
-      // call callback after timeout
-      setTimeout(fnCallback, 1100);
-    }
-  }
-
-  // start a typewriter animation for a text in the dataText array
-  function StartTextAnimation(i) {
-    if (typeof dataText[i] == 'undefined'){
-      setTimeout(function() {
-        StartTextAnimation(1);
-      });
-    }
-    // check if dataText[i] exists
-    if (i < dataText[i].length) {
-      // text exists! start typewriter animation
-      typeWriter(dataText[i], 0, function(){
-        // after callback (and whole text has been animated), start next text
-        StartTextAnimation(i + 1);
-      });
-    }
-  }
-  // start the text animation
-  StartTextAnimation(0);
-});
-</script>
 
 <script>
   ScrollReveal().reveal('.el', {

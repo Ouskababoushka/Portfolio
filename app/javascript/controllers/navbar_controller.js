@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
   connect() {
-    // NAVBAR COLOR GRADIENT SCROLL
+    /* navbar scroll color */
 
     const [red, green, blue] = [225, 223, 221]
     const navbar = document.querySelector('.navbar')
@@ -33,7 +33,7 @@ export default class extends Controller {
       }
     });
 
-    // SMOOTH SCROLL ANCHOR
+    /* scroll smooth to anchor */
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {

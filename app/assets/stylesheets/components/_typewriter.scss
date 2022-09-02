@@ -1,0 +1,29 @@
+.typewriting {
+  color: black!important;
+  font-family: 'pp_neue_montrealmedium'!important;
+  font-weight: bold!important;
+  font-style: normal!important;
+  text-decoration: none!important;
+  text-transform: uppercase;
+  h1 {
+    font-size: 1.3em;
+    color: black;
+    text-transform: uppercase;
+    a{
+      text-decoration: none;
+      pointer-events: none;
+      color: black;
+    }
+  }
+
+  span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+  }
+
+  @keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+}
