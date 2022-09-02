@@ -61,53 +61,30 @@
   </div>
 </section>
 
-<section class="About section mx-5 my-6 is-medium", id="about">
-    <h2 class="medium-text columns pl-3 mb-6 el is-size-3-mobile">ABOUT</h2>
-    <p class="el">
-      I'M A 29YO FRENCH DEVELOPER <br>GRADUATED FROM LE WAGON NANTES. <br>
-      I LOVE MAKING AND LISTENING TO MUSIC. <br>
-      TAKE A LISTEN HERE
-    </p>
-    <br>
-    <p class="el">
-      WANNA WORK TOGETHER ?
-    </p>
+<section class="About section mx-5 my-6 is-medium columns", id="about">
+    <div class="column pl-3">
+    <h2 class="medium-text mb-6 el is-size-3-mobile">ABOUT</h2>
+      <p class="el">
+        I'M A 29YO FRENCH DEVELOPER <br>GRADUATED FROM LE WAGON NANTES. <br>
+        I LOVE MAKING AND LISTENING TO MUSIC. <br>
+        TAKE A LISTEN HERE
+      </p>
+      <br>
+      <p class="el">
+        WANT TO WORK TOGETHER ?
+      </p>
+    </div>
+    <div class="column"></div>
 </section>
 
-<section class="section columns typewriter skills">
-  <h1 class="column el">bulma</h1>
-
+<section class="skills section columns mx-5 my-6">
+  <h1 class="column el"></h1>
 </section>
 
 <%# <%= render partial: "3d_round_viewer" %>
 
 <section class="Contact section columns mx-6", id="contact">
     <button data-text-swap="Copied to <br> clipboard" onclick="copyText()" class="Email hover-underline-animation my-6 el has-text-left">BONJOUR@VALENTIN <br> CHAUVEAU.COM</button>
-    <script>
-
-      function copyText() {
-        /* Copy text into clipboard */
-        navigator.clipboard.writeText
-        ("bonjour@valentinchauveau.com");
-      }
-
-      var email = document.querySelectorAll("button")[0];
-      email.addEventListener('click', function() {
-        if (email.getAttribute("data-text-swap") == email.innerHTML) {
-          email.innerHTML = email.getAttribute("data-text-original");
-      } else {
-        email.setAttribute("data-text-original", email.innerHTML);
-        email.innerHTML = email.getAttribute("data-text-swap");
-      }
-        setTimeout(function(){
-          email.setAttribute("data-text-swap", email.innerHTML);
-          email.innerHTML = email.getAttribute("data-text-original");;
-        }, 1500);
-
-      }, false);
-
-
-    </script>
 </section>
 
 <footer class="footer is-medium px-6 el">
@@ -118,7 +95,55 @@
   </div>
 </footer>
 
-<script class="hidden">
+<script>
+document.addEventListener('DOMContentLoaded',function(event){
+  // array with texts to type in typewriter
+  var dataText = ["Skills:", "Ruby on Rails", "Bulma", "Wordpress", "Tailwind", "Bootstrap", "HTML5 & SCSS", "Javascript",
+  "PostgreSQL", "Figma", "Stimulus", "React"];
+
+  // type one text in the typwriter
+  // keeps calling itself until the text is finished
+
+  function typeWriter(text, i, fnCallback) {
+    // chekc if text isn't finished yet
+    if (i < (text.length)) {
+      // add next character to h1
+     document.querySelector("h1").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+
+      // wait for a while and call this function again for next character
+      setTimeout(function() {
+        typeWriter(text, i + 1, fnCallback)
+      }, 120);
+    }
+    // text finished, call callback if there is a callback function
+    else if (typeof fnCallback == 'function') {
+      // call callback after timeout
+      setTimeout(fnCallback, 1100);
+    }
+  }
+
+  // start a typewriter animation for a text in the dataText array
+  function StartTextAnimation(i) {
+    if (typeof dataText[i] == 'undefined'){
+      setTimeout(function() {
+        StartTextAnimation(1);
+      });
+    }
+    // check if dataText[i] exists
+    if (i < dataText[i].length) {
+      // text exists! start typewriter animation
+      typeWriter(dataText[i], 0, function(){
+        // after callback (and whole text has been animated), start next text
+        StartTextAnimation(i + 1);
+      });
+    }
+  }
+  // start the text animation
+  StartTextAnimation(0);
+});
+</script>
+
+<script>
   ScrollReveal().reveal('.el', {
     delay: 800,
       useDelay: 'onload',
