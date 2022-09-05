@@ -7,6 +7,7 @@ export default class extends Controller {
     const [red, green, blue] = [225, 223, 221]
     const navbar = document.querySelector('.navbar')
     const anchor = document.querySelectorAll('a[href^="#"]')
+    // const underline = document.queryClassName('hover-underline-animation:after')
 
     window.addEventListener('scroll', () => {
       navbar.classList.add('hidden');

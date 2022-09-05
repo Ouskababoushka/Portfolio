@@ -8,22 +8,27 @@
   .navbar {
     padding: 2vh 2vw 0 2vw!important;
     background-color: rgb(225, 223, 221);
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0)!important;
     font-family: 'pp_neue_montrealbook'!important;
     font-weight: bold!important;
     font-style: normal!important;
     font-size: 1.4rem;
-    text-decoration: none!important;
+    // text-decoration: none!important;
   }
 
   .hover-underline-animation {
     display: inline-block;
     position: relative;
-    color:black;
+    // color:black!important;
   }
 
-  nav.navbar-menu a:hover{
-    text-decoration: none!important;
+  .navbar-menu {
+    .navbar-item {color: black;}
+
+    :hover {
+      background-color: transparent!important;
+      text-decoration: black!important;
+    }
   }
 
   .hover-underline-animation:after {
@@ -34,14 +39,15 @@
     height: 1px;
     bottom: 0;
     left: 0;
-    background-color:black;
+    background-color:black!important;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
+    text-decoration: none!important;
+
   }
 
   .hover-underline-animation:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-
   }
 }

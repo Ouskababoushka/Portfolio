@@ -7,7 +7,7 @@
       </div>
       <div class="resume column el typewriting is-size-6-mobile">
         <h1>
-          <a class="typewrite" data-period="2000" data-type='[ "HI, IM VAL.", "I DESIGN & DEVELOP LOGOS AND WEBSITES. <br> SCROLL DOWN TO SEE SOME OF MY WORK."]'>
+          <a class="typewrite" data-period="2000" data-type='["I CREATE LOGOS AND WEBSITES."]'>
             <span class="wrap"></span>
           </a>
         </h1>
@@ -23,7 +23,7 @@
 </section>
 
 <section class="Projects section mx-6 my-6 is-medium", id="work">
-  <h2 class="medium-text mb-5 el is-size-3-mobile">PROJECTS</h2>
+  <h2 class="medium-text mb-5 el is-size-4-mobile">PROJECTS</h2>
 
   <div class="songsalad lbc columns mt-6">
     <div class="flip-card column mb-6 el">
@@ -32,8 +32,8 @@
           <div class="songsalad-image"></div>
         </div>
         <div class="flip-card-back has-text-left">
-          <a href="http://songsalad.com/" target="blank" class="has-text-left is-size-3">SONGSALAD.COM</a>
-          <p class="mt-6 has-text-left">*PERSONAL PROJECT* SONGSALAD IS A MOBILE FIRST GAME APPLICATION DEVELOPED ON RAILS WHERE THE GOAL IS TO FIND THE LYRICS AND THE TITLE OF THE SONG IN ORDER TO WIN THE GAME SESSION. </p>
+          <a href="http://songsalad.com/" target="blank" class="has-text-left is-size-3 is-size-5-mobile">SONGSALAD.COM</a>
+          <p class="text-work mt-6 has-text-left is-size-6-mobile">•PERSONAL PROJECT• <br> SONGSALAD IS A MOBILE FIRST GAME APPLICATION DEVELOPED ON RAILS WHERE THE GOAL IS TO FIND THE LYRICS AND THE TITLE OF THE SONG IN ORDER TO WIN THE GAME SESSION. </p>
         </div>
       </div>
     </div>
@@ -44,8 +44,8 @@
           <div class="lbc-image"></div>
         </div>
         <div class="flip-card-back has-text-left">
-          <a href="" target="blank" class="is-size-3">LESBONSCOMPAGNONS.FR</a>
-          <p class="mt-6 has-text-left">LES BONS COMPAGNONS ARE TRADERS OPERATING IN FOOD MARKETS. THIS IS A 360° PROJECT WHERE I CREATED LOGO & IDENTITY ALONGSIDE A MARKETPLACE. </p>
+          <a href="" target="blank" class="is-size-3 is-size-5-mobile">LESBONSCOMPAGNONS.FR</a>
+          <p class="text-work mt-6 has-text-left is-size-6-mobile">LES BONS COMPAGNONS ARE TRADERS OPERATING IN FOOD MARKETS. THIS IS A 360° PROJECT WITH LOGO & IDENTITY CREATION ALONGSIDE A WEB PLATFORM. </p>
         </div>
       </div>
     </div>
@@ -58,8 +58,9 @@
           <div class="rockyaloha-image"></div>
         </div>
         <div class="flip-card-back has-text-left">
-          <a href="" target="blank" class="has-text-left is-size-3">SONGSALAD.COM</a>
-          <p class="mt-6 has-text-left">*PERSONAL PROJECT* SONGSALAD IS A MOBILE FIRST GAME APPLICATION DEVELOPED ON RAILS WHERE THE GOAL IS TO FIND THE LYRICS AND THE TITLE OF THE SONG IN ORDER TO WIN THE GAME SESSION. </p>
+          <a href="" target="blank" class="has-text-left is-size-3 is-size-5-mobile">ROCKY-ALHOA.COM</a>
+          <p class="text-work mt-6 has-text-left is-size-6-mobile">•PERSONAL PROJECT• <br>ROCKY ALOHA IS A MARKETPLACE INSPIRED BY AIRBNB.</p>
+          <p class="text-work mt-6 has-text-left is-size-6-mobile">FRONT-END AND BACK WORK</p>
         </div>
       </div>
     </div>
@@ -69,22 +70,25 @@
 
 <section class="About section mx-5 my-6 is-medium columns", id="about">
     <div class="column pl-3">
-    <h2 class="medium-text mb-6 el is-size-3-mobile">ABOUT</h2>
-      <p class="el">
+    <h2 class="medium-text mb-6 el is-size-4-mobile">ABOUT</h2>
+      <p class="el is-size-6-mobile">
         I'M A 29YO FRENCH DEVELOPER <br>GRADUATED FROM LE WAGON NANTES. <br>
-        I AM ALSO A PASSIONATE MUSICIAN.
+        I AM ALSO A PASSIONATE MUSIC COMPOSER.
       </p>
       <br>
-      <p class="el">*CLICK THE VINYL TO TAKE A LISTEN*</p>
+      <%# <p class="el">•CLICK THE VINYL TO TAKE A LISTEN•</p> %>
       <br>
     </div>
-    <div class="column has-text-right has-text-center-mobile">
-        <%= image_tag ("vinyl.png"), class:"rotate", width: 200, height: 200%>
+    <div class="column has-text-right has-text-center-mobile el">
+
+      <%= link_to "https://open.spotify.com/artist/1BhytEyR0LxnxXoeQPxGVV", target: "_blank" do %>
+        <%= image_tag ("vinyl.png"), class:"rotate zoom", width: 300, height: 300%>
+      <% end %>
     </div>
 </section>
 
 <section class="typewriting section columns mx-5 mt-6">
-  <div class="column pl-3 has-text-centered">
+  <div class="column pl-3 has-text-centered is-size-7-mobile">
   <%# <h2 class="medium-text mb-6 el is-size-3-mobile">CONTACT</h2> %>
     <h1>
       <a class="typewrite" data-period="2000" data-type='[ "WANT TO WORK TOGETHER ?", "SEND ME A MESSAGE" ]'>
