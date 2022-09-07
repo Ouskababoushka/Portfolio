@@ -1,6 +1,6 @@
-# fly.toml file generated for valentin-chauveau on 2022-09-06T16:16:30+02:00
+# fly.toml file generated for portfolio-valentin-chauveau on 2022-09-07T16:09:29+02:00
 
-app = "valentin-chauveau"
+app = "portfolio-valentin-chauveau"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
@@ -9,7 +9,7 @@ processes = []
   [build.args]
     BUNDLER_VERSION = "2.3.16"
     NODE_VERSION = "16.13.1"
-    RUBY_VERSION = "3.0.3"
+    RUBY_VERSION = "3.1.2"
 
 [deploy]
   release_command = "bin/rails fly:release"
