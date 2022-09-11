@@ -1,6 +1,6 @@
 <section class="hero is-responsive pt-6 mb-6" id="top">
   <div class="hero-body">
-    <h2 class="HomeHeroTitle big-text columns pl-2 mb-5 el is-size-2-mobile">FULLSTACK<br>DEVELOPER</h2>
+    <h2 class="HomeHeroTitle big-text columns pl-2 mb-5 el is-size-2-mobile">WEB<br>DEVELOPER</h2>
     <div class="columns my-5">
       <div class="column image el">
         <%= image_tag("profile-pic-blck.jpg") %>
@@ -34,10 +34,12 @@
         <div class="flip-card-back has-text-left">
           <a href="http://www.songsalad.com/" target="blank" class="has-text-left is-size-3 is-size-5-mobile">SONGSALAD.COM</a>
           <p class="text-work mt-6 has-text-left is-size-6-mobile">•Personal Project• <br> Songsalad is a mobile first game application developed on rails.
-            The goal is to find the lyrics and the title of the song in order to win the game. You can also play keep track of your stats and your friend's stats via a social mode.
+            The goal is to find the lyrics and the title of the song in order to win the game.
           </p>
         </div>
       </div>
+        <a href="http://www.songsalad.com/" target="blank" class="has-text-left is-size-4 is-size-6-mobile visit"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.9" stroke="currentColor" class="mt-2 icon w-1 h-1">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg></a>
     </div>
 
     <div class="flip-card column mb-6">
@@ -65,12 +67,22 @@
             Front-end and Back-end work.</p>
         </div>
       </div>
+    <a href="http://rocky-aloha.herokuapp.com/" target="blank" class=" has-text-left is-size-4 is-size-6-mobile visit"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.9" stroke="currentColor" class="mt-2 icon w-1 h-1">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg></a>
     </div>
     <div class="column"></div>
   </div>
 </section>
 
-<section class="About section mx-5 mt-6 is-medium columns", id="about">
+<section class="typewriting section mx-5 mt-6 is-medium columns", id="skills">
+    <div class="column pl-3">
+    <h2 class="medium-text mb-6 el is-size-4-mobile">SKILLS</h2>
+    <%= image_tag("https://www.svgrepo.com/show/342154/rails.svg", height: 100, width: 100, class:"mr-5") %>
+    <%= image_tag("https://www.svgrepo.com/show/341951/js.svg", height: 100, width: 100) %>
+    </div>
+</section>
+
+<section class="About section mx-5 mt-1 is-medium columns", id="about">
     <div class="column pl-3">
     <h2 class="medium-text mb-6 el is-size-4-mobile">ABOUT</h2>
       <p class="el is-size-6-mobile">
@@ -92,7 +104,6 @@
 
 <section class="typewriting section columns mx-5">
   <div class="column pl-3 has-text-centered is-size-7-mobile">
-  <%# <h2 class="medium-text mb-6 el is-size-3-mobile">CONTACT</h2> %>
     <h1>
       <a class="typewrite" data-period="2000" data-type='[ "WANT TO WORK TOGETHER ?", "SEND ME A MESSAGE" ]'>
         <span class="wrap"></span>
@@ -100,8 +111,6 @@
     </h1>
   </div>
 </section>
-
-<%# <%= render partial: "3d_round_viewer" %>
 
 <section class="Contact section columns mx-6", id="contact">
     <button data-text-swap="Copied to <br> clipboard" onclick="copyText()" class="Email hover-underline-animation my-6 el has-text-left">BONJOUR@VALENTIN <br> CHAUVEAU.COM</button>
