@@ -74,11 +74,37 @@
   </div>
 </section>
 
-<section class="typewriting section mx-5 mt-6 is-medium columns", id="skills">
-    <div class="column pl-3">
-    <h2 class="medium-text mb-6 el is-size-4-mobile">SKILLS</h2>
-    <%= image_tag("https://www.svgrepo.com/show/342154/rails.svg", height: 100, width: 100, class:"mr-5") %>
-    <%= image_tag("https://www.svgrepo.com/show/341951/js.svg", height: 100, width: 100) %>
+<section class="typewriting section mx-5 mt-6 is-medium ", id="skills">
+    <div class=" pl-3">
+      <h2 class="medium-text mb-6 el is-size-4-mobile">SKILLS</h2>
+      <div class="columns">
+        <div class="column has-text-centered zoom el">
+          <%= image_tag ("card-skills-ruby.jpg"), width: 450, height: 450%>
+        </div>
+        <div class="column has-text-centered  zoom el">
+          <%= image_tag ("card-skills-rails.jpg"), width: 450, height: 450%>
+        </div>
+        <div class="column has-text-centered zoom el">
+          <%= image_tag ("card-skills-html-css-js.jpg"), width: 450, height: 450%>
+        </div>
+        <div class="column has-text-centered zoom el">
+          <%= image_tag ("card-skills-stimulus.jpg"), width: 450, height: 450%>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column has-text-centered zoom el">
+          <%= image_tag ("card-skills-wordpress.jpg"), width: 450, height: 450%>
+        </div>
+        <div class="column has-text-centered zoom el">
+          <%= image_tag ("card-skills-figma.jpg"), width: 450, height: 450%>
+        </div>
+        <div class="column has-text-centered zoom el">
+          <%= image_tag ("card-skills-postgresql.jpg"), width: 450, height: 450%>
+        </div>
+        <div class="column has-text-centered zoom el">
+          <%= image_tag ("card-skills-tw.jpg"), width: 450, height: 450%>
+        </div>
+      </div>
     </div>
 </section>
 
@@ -95,7 +121,6 @@
       <br>
     </div>
     <div class="column has-text-right has-text-center-mobile el">
-
       <%= link_to "https://open.spotify.com/artist/1BhytEyR0LxnxXoeQPxGVV", target: "_blank" do %>
         <%= image_tag ("vinyl.jpg"), class:"rotate", width: 300, height: 300%>
       <% end %>
