@@ -74,34 +74,34 @@
   </div>
 </section>
 
-<section class="typewriting section mx-5 mt-6 is-medium ", id="skills">
+<section class="typewriting section mx-5 mt-6 is-medium animation ", id="skills">
     <div class=" pl-3">
       <h2 class="medium-text mb-6 el is-size-4-mobile">SKILLS</h2>
-      <div class="columns">
-        <div class="column has-text-centered zoom el">
+      <div class="columns ">
+        <div class="column has-text-centered ">
           <%= image_tag ("card-skills-ruby.jpg"), width: 450, height: 450%>
         </div>
-        <div class="column has-text-centered  zoom el">
+        <div class="column has-text-centered ">
           <%= image_tag ("card-skills-rails.jpg"), width: 450, height: 450%>
         </div>
-        <div class="column has-text-centered zoom el">
+        <div class="column has-text-centered ">
           <%= image_tag ("card-skills-html-css-js.jpg"), width: 450, height: 450%>
         </div>
-        <div class="column has-text-centered zoom el">
+        <div class="column has-text-centered ">
           <%= image_tag ("card-skills-stimulus.jpg"), width: 450, height: 450%>
         </div>
       </div>
       <div class="columns">
-        <div class="column has-text-centered zoom el">
+        <div class="column has-text-centered ">
           <%= image_tag ("card-skills-wordpress.jpg"), width: 450, height: 450%>
         </div>
-        <div class="column has-text-centered zoom el">
+        <div class="column has-text-centered ">
           <%= image_tag ("card-skills-figma.jpg"), width: 450, height: 450%>
         </div>
-        <div class="column has-text-centered zoom el">
+        <div class="column has-text-centered ">
           <%= image_tag ("card-skills-postgresql.jpg"), width: 450, height: 450%>
         </div>
-        <div class="column has-text-centered zoom el">
+        <div class="column has-text-centered  ">
           <%= image_tag ("card-skills-tw.jpg"), width: 450, height: 450%>
         </div>
       </div>
@@ -137,6 +137,10 @@
   </div>
 </section>
 
+<section class=" animation">
+  <%= image_tag ("paper-plane.png"), class:"paper-plane"%>
+</section>
+
 <section class="Contact section columns mx-6", id="contact">
     <button data-text-swap="Copied to <br> clipboard" onclick="copyText()" class="Email hover-underline-animation my-6 el has-text-left">BONJOUR@VALENTIN <br> CHAUVEAU.COM</button>
 </section>
@@ -149,6 +153,30 @@
 
   </div>
 </footer>
+
+<script>
+
+  const flightPath {
+    curviness: 1.25,
+    autoRotate: true,
+    values: [
+      {x: 100, y: -20},
+      {x: 300, y: 10},
+      {x: 500, y: 1000},
+      {x: 700, y: -90},
+    ]
+  }
+
+  const tween = new TimeLineLite();
+
+  tween.add(
+    TweenLite.to('.paper-plane', 1, {
+      bezier: flightPath,
+      ease: Power1.easeInOut
+    })
+  );
+
+</script>
 
 <script>
   ScrollReveal().reveal('.el', {
