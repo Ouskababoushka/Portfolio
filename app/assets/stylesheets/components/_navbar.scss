@@ -19,16 +19,10 @@
   .hover-underline-animation {
     display: inline-block;
     position: relative;
-    // color:black!important;
   }
 
   .navbar-menu {
-    .navbar-item {color: black;}
-
-    :hover {
-      background-color: transparent!important;
-      text-decoration: black!important;
-    }
+    .navbar-item, .navbar-item:hover {color: black;}
   }
 
   .hover-underline-animation:after {
@@ -43,7 +37,6 @@
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
     text-decoration: none!important;
-
   }
 
   .hover-underline-animation:hover:after {
