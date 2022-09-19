@@ -8,7 +8,7 @@ export default class extends Controller {
   /* Copy text into clipboard */
   connect() {
     navigator.clipboard.writeText
-    ("bonjour@valentinchauveau.com");
+    ("valentinchauveau.web@gmail.com");
 
     var email = document.querySelectorAll("button")[0];
     email.addEventListener('click', function() {
