@@ -9,6 +9,10 @@ body {
   // overflow-y: scroll;
 }
 
+.ic {
+  color: black;
+}
+
 button {
   background-color: transparent;
   border: none;
@@ -23,6 +27,13 @@ p {
   font-weight: bold!important;
   font-style: normal!important;
   font-size: 1.3rem;
+}
+
+.title, .subtitle {
+  font-family: 'pp_neue_montrealbook'!important;
+  font-weight: bold!important;
+  font-style: normal!important;
+  color: black!important;
 }
 
 .big-text {
