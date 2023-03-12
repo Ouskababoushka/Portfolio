@@ -38,8 +38,8 @@
           </p>
         </div>
       </div>
-        <a href="http://www.songsalad.com/" target="blank" class="has-text-left is-size-4 is-size-6-mobile visit"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.9" stroke="currentColor" class="mt-2 icon w-1 h-1">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg></a>
+        <%# <a href="http://www.songsalad.com/" target="blank" class="has-text-left is-size-4 is-size-6-mobile visit"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.9" stroke="currentColor" class="mt-2 icon w-1 h-1">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg></a> %>
     </div>
 
     <div class="flip-card column mb-6 el">
@@ -62,15 +62,17 @@
     <div class="flip-card column mb-6 el">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <div class="rockyaloha-image"></div>
+          <div class="douzepointcinq-image"></div>
         </div>
         <div class="flip-card-back has-text-left">
-          <a href="" target="blank" class="has-text-left is-size-3 is-size-5-mobile">ROCKY-ALHOA.COM</a>
-          <p class="text-work mt-6 has-text-left is-size-6-mobile">•Personal Project• <br>Rocky Aloha is a marketplace inspired by Airbnb, designed and developed within a week.
-            I intervened on both front-end and back-end.</p>
+          <a href="" target="blank" class="has-text-left is-size-3 is-size-5-mobile">12.5</a>
+          <p class="text-work mt-6 has-text-left is-size-6-mobile"><br>Convert the 12.5 square metres available in an unused underground parking space into several secure spaces for two-wheelers: <br>
+            Rails API. <br>
+            Heroku Tasks & Sidekiq Jobs. <br>
+            Implementation of severals features (back office) + front end integration.</p>
         </div>
       </div>
-    <a href="http://rocky-aloha.herokuapp.com/" target="blank" class=" has-text-left is-size-4 is-size-6-mobile visit"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.9" stroke="currentColor" class="mt-2 icon w-1 h-1">
+    <a href="https://www.douzepointcinq.com/" target="blank" class=" has-text-left is-size-4 is-size-6-mobile visit"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.9" stroke="currentColor" class="mt-2 icon w-1 h-1">
         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg></a>
     </div>
 
@@ -136,7 +138,7 @@
   </div>
 </section>
 
-<section class="About section mx-5 mt-1 is-medium columns", id="about">
+<section class="About section mx-5 is-medium columns", id="about">
     <div class="column pl-3">
     <h2 class="medium-text mb-6 el is-size-4-mobile">ABOUT</h2>
       <p class="el is-size-6-mobile">
@@ -187,7 +189,7 @@
 </script>
 
 <script>
-navigator.clipboard.writeText
+ navigator.clipboard.writeText
     ("valentinchauveau.web@gmail.com");
 
     var email = document.querySelectorAll("button")[0];
@@ -252,7 +254,7 @@ navigator.clipboard.writeText
 </script>
 
 <script>
-var TxtType = function(el, toRotate, period) {
+  var TxtType = function(el, toRotate, period) {
       this.toRotate = toRotate;
       this.el = el;
       this.loopNum = 0;
@@ -285,7 +287,7 @@ var TxtType = function(el, toRotate, period) {
       } else if (this.isDeleting && this.txt === '') {
       this.isDeleting = false;
       this.loopNum++;
-      delta = 500;
+      delta = 300;
       }
 
       setTimeout(function() {
@@ -307,7 +309,7 @@ var TxtType = function(el, toRotate, period) {
 
 <script>
   ScrollReveal().reveal('.el', {
-    delay: 800,
+    delay: 700,
       useDelay: 'onload',
       reset: true,
   })
