@@ -29,7 +29,7 @@ ENV BASH_ENV ~/.bashrc
 ENV VOLTA_HOME /root/.volta
 ENV PATH $VOLTA_HOME/bin:/usr/local/bin:$PATH
 
-RUN volta install node@16.13.1 && volta install yarn
+RUN volta install node@18.12.0 && volta install yarn
 
 FROM base as build_deps
 
